@@ -1,5 +1,6 @@
+require('dotenv').config();
 const Sequelize = require('sequelize');
-const DB_STRING = process.env.DATABASE_URL || 'postgres://super-rogatory@localhost:5432/coderone-jwt';
+const DB_STRING = process.env.DATABASE_URL || `postgres://${process.env.DB_USER}@localhost:5432/${process.env.DB_NAME}`;
 const config = {
 	logging: false,
 };
