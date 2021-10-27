@@ -1,1 +1,1 @@
-# coderone-jwt-util
+# Reviewing JSON Web Tokens w/Sequelize (Practice)
