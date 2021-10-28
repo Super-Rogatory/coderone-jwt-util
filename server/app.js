@@ -4,7 +4,7 @@ const morgan = require('morgan');
 const cors = require('cors');
 const path = require('path');
 const PORT = process.env.PORT || 5000;
-const db = require('./db/db'); // will run authenticate method.
+const db = require('./db/index').db; // will run authenticate method.
 
 // bootstrap db
 db.sync()
@@ -12,8 +12,8 @@ db.sync()
 	.catch((err) => console.log('failed to start up the database \n', err));
 
 // body parsing middleware
-app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // statically serving the public folder
 app.use(express.static(path.resolve(__dirname, '../client/public')));
