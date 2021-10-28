@@ -1,1 +1,1 @@
-# Reviewing JSON Web Tokens w/Sequelize (Practice)
+# Simple User Authorization with JWT (no true Authentication, no crypt or hashing.) Review for Chatterly Project.

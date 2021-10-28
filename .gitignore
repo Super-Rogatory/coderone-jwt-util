@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Keep Private Key A Secret
+server/auth/id_rsa_priv.pem
